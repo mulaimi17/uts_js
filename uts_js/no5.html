@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soal5</title>
+</head>
+<body>
+
+    <button id="tampilharimau">tombol harimau</button>
+    <button id="tampilPanda">tampilkan panda</button>
+    <button id="tampilKucing">tampilkan kucing</button>
+    <button id="tampilrusa">tampilkan rusa</button>
+    <img id="gambar" src="">
+
+    <script>
+        const btnGambarharimau = document.getElementById("tampilharimau");
+        const btnGambarPanda = document.getElementById("tampilPanda");
+        const btnGambarKucing = document.getElementById("tampilKucing");
+        const btnGambarrusa = document.getElementById("tampilrusa");
+
+        function tampilharimau(){
+            let image = document.getElementById("gambar");
+            image.src = "harimau.jpg";
+        }
+
+        function tampilPanda(){
+            let image = document.getElementById("gambar");
+            image.src = "panda.jpg";
+        }
+
+        function tampilKucing(){
+            let image = document.getElementById("gambar");
+            image.src = "kucing.jpg";
+        }
+
+        function tampilrusa(){
+            let image = document.getElementById("gambar");
+            image.src = "rusa.jpeg";
+        }
+
+
+         btnGambarharimau.addEventListener("click", tampilharimau);
+        btnGambarPanda.addEventListener("click", tampilPanda);
+        btnGambarKucing.addEventListener("click", tampilKucing);
+        btnGambarrusa.addEventListener("click", tampilrusa);
+
+    </script>
+    
+</body>
+</html>

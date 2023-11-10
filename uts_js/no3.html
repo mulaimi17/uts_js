@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>soal3</title>
+    <style>
+      body {
+        font-family: "bold";
+        color: black;
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ucapan selamat</h1>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" placeholder="Nama Lengkap" />
+    <button onclick="ucapanSelamat()">ucapan</button>
+
+    <p id="ucapan"></p>
+
+    <script>
+      function ucapanSelamat() {
+        var nama = document.getElementById("nama").value;
+        var jam = new Date().getHours();
+        var ucapkan = document.getElementById("ucapan");
+
+        if (jam >= 1 && jam < 11) {
+          ucapkan.innerHTML = "Selamat pagi, " + nama + "!";
+        } else if (jam >= 11 && jam < 14) {
+          ucapkan.innerHTML = "Selamat siang, " + nama + "!";
+        } else if (jam >= 14 && jam < 19) {
+          ucapkan.innerHTML = "Selamat sore, " + nama + "!";
+        } else {
+          ucapkan.innerHTML = "Selamat malam, " + nama + "!";
+        }
+
+      }
+    </script>
+  </body>
+</html>
